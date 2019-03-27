@@ -1,6 +1,6 @@
 {
   "name": "@xwtec/eslint-config-vue",
-  "version": "4.1.6",
+  "version": "4.1.7",
   "description": "ESLint Configuration for xwtec vue projects",
   "main": "index.js",
   "keywords": ["xwtec", "eslint", "config"],
