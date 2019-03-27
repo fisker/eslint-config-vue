@@ -1,0 +1,58 @@
+{
+  "name": "@xwtec/eslint-config-vue",
+  "version": "4.1.6",
+  "description": "ESLint Configuration for xwtec vue projects",
+  "main": "index.js",
+  "keywords": ["xwtec", "eslint", "config"],
+  "files": ["index.js"],
+  "scripts": {
+    "release": "run-s test build prettier release:*",
+    "release:npm": "np --no-yarn --no-cleanup",
+    "test": "eslint **/*.js --config ./index.js",
+    "prettier": "prettier **/*.{js,md,json} --write",
+    "lint": "npm-run-all --parallel build:*",
+    "build": "npm-run-all build:*",
+    "build:rules": "node -r esm ./scripts/rules",
+    "lint:js": "eslint **/*.js",
+    "lint:markdown": "markdownlint *.md"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@xwtec/eslint-config": "^5.0.3",
+    "eslint-plugin-vue": "^5.2.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "xwtec/eslint-config-vue",
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "cz-conventional-changelog-emoji": "^0.1.0",
+    "eslint": "^5.15.1",
+    "esm": "^3.2.20",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "markdownlint-cli": "^0.14.1",
+    "mem": "^4.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.16.4"
+  },
+  "peerDependencies": {
+    "eslint": "*",
+    "prettier": "*"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-emoji"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/xwtec/eslint-config-vue/issues"
+  },
+  "homepage": "https://github.com/xwtec/eslint-config-vue#readme",
+  "author": {
+    "name": "xwtec",
+    "url": "https://github.com/xwtec"
+  }
+}
