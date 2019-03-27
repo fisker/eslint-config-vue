@@ -86,7 +86,7 @@ module.exports = {
 ## Relative
 
 - [@xwtec/eslint-config](https://github.com/xwtec/eslint-config)
-- [@xwtec/eslint-config-vue](https://github.com/xwtec/eslint-config-vue)
+- [@xwtec/eslint-config-legacy](https://github.com/xwtec/eslint-config-legacy)
 
 ## Links
 
