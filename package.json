@@ -6,19 +6,20 @@
   "keywords": ["xwtec", "eslint", "config"],
   "files": ["index.js"],
   "scripts": {
-    "release": "run-s test build prettier release:*",
-    "release:npm": "np --no-yarn --no-cleanup",
+    "release": "run-s lint build test prettier dist",
+    "dist": "run-p dist:*",
+    "dist:npm": "np --no-yarn --no-cleanup",
     "test": "eslint **/*.js --config ./index.js",
     "prettier": "prettier **/*.{js,md,json} --write",
-    "lint": "npm-run-all --parallel build:*",
+    "lint": "run-p lint:*",
+    "lint:js": "eslint **/*.js --fix",
+    "lint:markdown": "markdownlint *.md",
     "build": "npm-run-all build:*",
-    "build:rules": "node -r esm ./scripts/rules",
-    "lint:js": "eslint **/*.js",
-    "lint:markdown": "markdownlint *.md"
+    "build:rules": "node -r esm ./scripts/rules"
   },
   "license": "MIT",
   "dependencies": {
-    "@xwtec/eslint-config": "^5.0.3",
+    "@xwtec/eslint-config": "^5.0.4",
     "eslint-plugin-vue": "^5.2.2"
   },
   "publishConfig": {
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
+    "@xwtec/prettier-config": "^1.0.1",
     "cz-conventional-changelog-emoji": "^0.1.0",
     "eslint": "^5.16.0",
     "esm": "^3.2.22",
@@ -54,5 +56,6 @@
   "author": {
     "name": "xwtec",
     "url": "https://github.com/xwtec"
-  }
+  },
+  "prettier": "@xwtec/prettier-config"
 }

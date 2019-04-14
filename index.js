@@ -32,4 +32,4 @@ module.exports = {
 
     'vue/valid-template-root': 'warn',
   },
-}
+};

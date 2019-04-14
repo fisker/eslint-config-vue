@@ -1,16 +1,16 @@
-const MARKDOWN_TH_ALIGN_LEFT = ':-'
-const MARKDOWN_TH_ALIGN_CENTER = ':-:'
+const MARKDOWN_TH_ALIGN_LEFT = ':-';
+const MARKDOWN_TH_ALIGN_CENTER = ':-:';
 const MARKDOWN_TH_ALIGN = [
   MARKDOWN_TH_ALIGN_LEFT,
   MARKDOWN_TH_ALIGN_CENTER,
   MARKDOWN_TH_ALIGN_CENTER,
-]
+];
 
 function markdown({names, data}) {
-  const [localName, foreignName] = names
+  const [localName, foreignName] = names;
 
   if (data.length === 0) {
-    return 'No difference.'
+    return 'No difference.';
   }
 
   return [
@@ -23,7 +23,7 @@ function markdown({names, data}) {
     ]),
   ]
     .map(parts => parts.join('|'))
-    .join('\n')
+    .join('\n');
 }
 
-export default markdown
+export default markdown;

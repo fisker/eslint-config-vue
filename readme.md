@@ -32,7 +32,7 @@ npm install --save-dev eslint prettier @xwtec/eslint-config-vue
 ```js
 module.exports = {
   extends: ['@xwtec/vue'],
-}
+};
 ```
 
 ## Rules

@@ -1,14 +1,14 @@
-import {dirname} from 'path'
-import {mkdirSync, writeFileSync, existsSync} from 'fs'
+import {dirname} from 'path';
+import {mkdirSync, writeFileSync, existsSync} from 'fs';
 
 function writeFile(file, content) {
-  const dir = dirname(file)
+  const dir = dirname(file);
 
   if (!existsSync(dir)) {
-    mkdirSync(dir)
+    mkdirSync(dir);
   }
 
-  writeFileSync(file, content)
+  writeFileSync(file, content);
 }
 
-export default writeFile
+export default writeFile;

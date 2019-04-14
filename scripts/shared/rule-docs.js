@@ -1,11 +1,11 @@
-const mem = require('mem')
+const mem = require('mem');
 
 function getRuleDocs(ruleId, defs) {
-  const def = defs.get(ruleId) || {}
-  const {meta = {}} = def
-  const {docs = {}} = meta
+  const def = defs.get(ruleId) || {};
+  const {meta = {}} = def;
+  const {docs = {}} = meta;
 
-  return docs
+  return docs;
 }
 
-export default mem(getRuleDocs, {cacheKey: ruleId => ruleId})
+export default mem(getRuleDocs, {cacheKey: ruleId => ruleId});

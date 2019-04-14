@@ -6,12 +6,12 @@
  *
  */
 
-const CMD_PRETTIER = 'prettier --write'
+const CMD_PRETTIER = 'prettier --write';
 // eslint-disable-next-line no-unused-vars
-const CMD_ESLINT = 'eslint'
-const CMD_ESLINT_FIX = 'eslint --fix'
-const CMD_MARKDOWNLINT = 'markdownlint'
-const CMD_GIT_ADD = 'git add'
+const CMD_ESLINT = 'eslint';
+const CMD_ESLINT_FIX = 'eslint --fix';
+const CMD_MARKDOWNLINT = 'markdownlint';
+const CMD_GIT_ADD = 'git add';
 
 const config = {
   // markdown files
@@ -55,22 +55,22 @@ const config = {
   // json files
   // prettier
   'gql,graphql': CMD_PRETTIER,
-}
+};
 
 // export
 
 function toArray(x) {
-  x = Array.isArray(x) ? x : x.split(',')
-  return x.map(s => s.trim())
+  x = Array.isArray(x) ? x : x.split(',');
+  return x.map(s => s.trim());
 }
 
 function reduceByCommand(grouped, {exts, cmds}) {
   if (!grouped[cmds]) {
-    grouped[cmds] = [cmds]
+    grouped[cmds] = [cmds];
   }
-  grouped[cmds] = grouped[cmds].concat(exts)
+  grouped[cmds] = grouped[cmds].concat(exts);
 
-  return grouped
+  return grouped;
 }
 
 function groupByCommand(config) {
@@ -79,35 +79,35 @@ function groupByCommand(config) {
       exts: toArray(key),
       cmds: toArray(config[key]),
     }))
-    .reduce(reduceByCommand, {})
+    .reduce(reduceByCommand, {});
 }
 
 function reduceByGlob(config, {exts, cmds}) {
-  const glob = exts.length > 1 ? `*.{${exts}}` : `*.${exts}`
+  const glob = exts.length > 1 ? `*.{${exts}}` : `*.${exts}`;
 
-  config[glob] = (Array.isArray(cmds) ? cmds : [cmds]).concat([CMD_GIT_ADD])
+  config[glob] = (Array.isArray(cmds) ? cmds : [cmds]).concat([CMD_GIT_ADD]);
 
-  return config
+  return config;
 }
 
 function groupByGlob(grouped) {
   return Object.keys(grouped)
     .map(key => {
-      const [cmds, ...exts] = grouped[key]
+      const [cmds, ...exts] = grouped[key];
 
       return {
         cmds,
         exts,
-      }
+      };
     })
-    .reduce(reduceByGlob, {})
+    .reduce(reduceByGlob, {});
 }
 
 function parseConfig(config) {
-  const grouped = groupByCommand(config)
-  const globed = groupByGlob(grouped)
+  const grouped = groupByCommand(config);
+  const globed = groupByGlob(grouped);
 
-  return globed
+  return globed;
 }
 
-module.exports = parseConfig(config)
+module.exports = parseConfig(config);
