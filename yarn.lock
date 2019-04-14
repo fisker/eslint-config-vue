@@ -174,15 +174,15 @@
 
 "@xwtec/eslint-config@^5.0.4":
   version "5.0.4"
-  resolved "http://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-5.0.4.tgz#59edca51e600dae7fd099f46bb5e658c65ae047b"
-  integrity sha1-We3KUeYA2uf9CZ9Gu15ljGWuBHs=
+  resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-5.0.4.tgz#59edca51e600dae7fd099f46bb5e658c65ae047b"
+  integrity sha512-BKChGJmi1R5Z3ZeoayqyHoUTygL4HxynHa3tOZL6e345MNZMaDQ5Jj+RrncLWImZqZGzslnGmrcT1+kASDG5dg==
   dependencies:
     eslint-plugin-prettier "^3.0.1"
 
 "@xwtec/prettier-config@^1.0.1":
   version "1.0.1"
-  resolved "http://registry.npm.taobao.org/@xwtec/prettier-config/download/@xwtec/prettier-config-1.0.1.tgz#30bcdde556740f3e5ccd54d416608f6ca1a3d873"
-  integrity sha1-MLzd5VZ0Dz5czVTUFmCPbKGj2HM=
+  resolved "https://registry.yarnpkg.com/@xwtec/prettier-config/-/prettier-config-1.0.1.tgz#30bcdde556740f3e5ccd54d416608f6ca1a3d873"
+  integrity sha512-Hh98TTMl6/vNrI3Dxh1+OLoUjP2suIIOl/Gm1kE6pq99ww8T/cNVbiixlvR2zTLF77jbxF1XhiiQa0l2TiKXFw==
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -1373,9 +1373,9 @@ ini@^1.3.4, ini@~1.3.0:
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
 
 inquirer@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-6.2.2.tgz#46941176f65c9eb20804627149b743a218f25406"
-  integrity sha512-Z2rREiXA6cHRR9KBOarR3WuLlFzlIfAEIiB45ll5SSadMg7WqOh1MKEjjndfuH5ewXdixWCxqnVfGOQzPeiztA==
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-6.3.1.tgz#7a413b5e7950811013a3db491c61d1f3b776e8e7"
+  integrity sha512-MmL624rfkFt4TG9y/Jvmt8vdmOo836U7Y0Hxr2aFk3RelZEGX4Igk0KabWrcaaZaTv9uzglOqWh1Vly+FAWAXA==
   dependencies:
     ansi-escapes "^3.2.0"
     chalk "^2.4.2"
@@ -1388,7 +1388,7 @@ inquirer@^6.2.2:
     run-async "^2.2.0"
     rxjs "^6.4.0"
     string-width "^2.1.0"
-    strip-ansi "^5.0.0"
+    strip-ansi "^5.1.0"
     through "^2.3.6"
 
 is-accessor-descriptor@^0.1.6:
@@ -2899,7 +2899,7 @@ strip-ansi@^4.0.0:
   dependencies:
     ansi-regex "^3.0.0"
 
-strip-ansi@^5.0.0, strip-ansi@^5.1.0:
+strip-ansi@^5.1.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
