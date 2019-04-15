@@ -29,7 +29,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
-    "@xwtec/prettier-config": "^1.0.1",
+    "@xwtec/prettier-config": "^1.0.2",
     "cz-conventional-changelog-emoji": "^0.1.0",
     "eslint": "^5.16.0",
     "esm": "^3.2.22",
