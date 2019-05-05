@@ -6,35 +6,35 @@
  */
 
 // hooks
-const HOOK_COMMIT_MSG = 'commit-msg'
-const HOOK_PRE_COMMIT = 'pre-commit'
+const HOOK_COMMIT_MSG = 'commit-msg';
+const HOOK_PRE_COMMIT = 'pre-commit';
 
 // commands
-const CMD_COMMITLINT = 'commitlint -E HUSKY_GIT_PARAMS'
-const CMD_LINT_STAGED = 'lint-staged'
+const CMD_COMMITLINT = 'commitlint -E HUSKY_GIT_PARAMS';
+const CMD_LINT_STAGED = 'lint-staged';
 
 const hooks = {
   [HOOK_COMMIT_MSG]: [CMD_COMMITLINT],
   [HOOK_PRE_COMMIT]: ['yarn build', 'git add .', CMD_LINT_STAGED],
-}
+};
 
 // export
 
-const tasks = arr => arr.join(' && ')
+const tasks = arr => arr.join(' && ');
 
 function parseHooks(hooks) {
-  const keys = Object.keys(hooks)
+  const keys = Object.keys(hooks);
   for (const hook of keys) {
-    const cmds = hooks[hook]
+    const cmds = hooks[hook];
 
     if (Array.isArray(cmds)) {
-      hooks[hook] = tasks(cmds)
+      hooks[hook] = tasks(cmds);
     }
   }
 
-  return hooks
+  return hooks;
 }
 
 module.exports = {
   hooks: parseHooks(hooks),
-}
+};
