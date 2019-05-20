@@ -163,6 +163,11 @@
   dependencies:
     "@commitlint/config-conventional" "^7.6.0"
 
+"@fisker/husky-config@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/@fisker/husky-config/download/@fisker/husky-config-1.1.0.tgz#6edc5a2bf43a53ed7002d6eb3c0d14bc8c06ca69"
+  integrity sha1-btxaK/Q6U+1wAtbrPA0UvIwGymk=
+
 "@fisker/lint-staged-config@^1.0.4":
   version "1.0.4"
   resolved "https://registry.npm.taobao.org/@fisker/lint-staged-config/download/@fisker/lint-staged-config-1.0.4.tgz#08206dd7ce02fccce83939fcf21ba2b774b5be36"
@@ -189,12 +194,12 @@
   resolved "https://registry.npm.taobao.org/@types/normalize-package-data/download/@types/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha1-5IbQ2XOW15vu3QpuM/RTT/a0lz4=
 
-"@xwtec/eslint-config@^5.0.4":
-  version "5.0.4"
-  resolved "https://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-5.0.4.tgz#59edca51e600dae7fd099f46bb5e658c65ae047b"
-  integrity sha1-We3KUeYA2uf9CZ9Gu15ljGWuBHs=
+"@xwtec/eslint-config@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-5.0.5.tgz#5edfec90641b3985e93d3c43967024f7b6344c60"
+  integrity sha1-Xt/skGQbOYXpPTxDlnAk97Y0TGA=
   dependencies:
-    eslint-plugin-prettier "^3.0.1"
+    eslint-plugin-prettier "^3.1.0"
 
 "@xwtec/prettier-config@^1.0.2":
   version "1.0.2"
@@ -848,10 +853,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.4, escape-string-regexp@^
   resolved "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-prettier@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npm.taobao.org/eslint-plugin-prettier/download/eslint-plugin-prettier-3.0.1.tgz#19d521e3981f69dd6d14f64aec8c6a6ac6eb0b0d"
-  integrity sha1-GdUh45gfad1tFPZK7IxqasbrCw0=
+eslint-plugin-prettier@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-prettier/download/eslint-plugin-prettier-3.1.0.tgz#8695188f95daa93b0dc54b249347ca3b79c4686d"
+  integrity sha1-hpUYj5XaqTsNxUskk0fKO3nEaG0=
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
