@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@xwtec/eslint-config": "^6.0.5",
+    "@xwtec/eslint-config": "^6.0.6",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-vue": "^5.2.2"
   },
@@ -44,7 +44,7 @@
     "@fisker/commitlint-config": "^1.0.9",
     "@fisker/husky-config": "^1.1.0",
     "@fisker/lint-staged-config": "^1.0.4",
-    "@xwtec/eslint-config": "^6.0.5",
+    "@xwtec/eslint-config": "^6.0.6",
     "@xwtec/prettier-config": "^1.0.2",
     "cz-conventional-changelog-emoji": "^0.1.0",
     "eslint": "^5.16.0",
