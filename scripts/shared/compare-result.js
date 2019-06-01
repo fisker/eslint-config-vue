@@ -4,12 +4,9 @@ import parseRuleId from './parse-rule-id';
 
 function getResult(compare) {
   const {local, foreign, filter} = compare;
-
   const names = [local.name, foreign.name];
-
   const localRules = getRules(local.config);
   const foreignRules = getRules(foreign.config);
-
   const data = [
     ...new Set([...Object.keys(localRules), ...Object.keys(foreignRules)]),
   ]

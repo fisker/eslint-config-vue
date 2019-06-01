@@ -1,5 +1,4 @@
 const mem = require('mem');
-
 const numericType = ['off', 'warn', 'error'];
 
 function parseRuleValue(value) {

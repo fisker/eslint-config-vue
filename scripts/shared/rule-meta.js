@@ -1,9 +1,9 @@
 const mem = require('mem');
 
 function getRuleDocs(ruleId, defs) {
-  const def = defs.get(ruleId) || {},
-    {meta = {}} = def,
-    {fixable = false, docs = {}} = meta;
+  const def = defs.get(ruleId) || {};
+  const {meta = {}} = def;
+  const {fixable = false, docs = {}} = meta;
 
   return {
     fixable,
