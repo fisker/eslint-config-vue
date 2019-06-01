@@ -1,27 +1,24 @@
 import {CLIEngine} from 'eslint';
 import mem from 'mem';
 
-import ruleDocs from './rule-docs';
+import ruleMeta from './rule-meta';
 import ruleValue from './rule-value';
 
 function getRules(config) {
   const engine = new CLIEngine({
-    baseConfig: config,
-    useEslintrc: false,
-  });
-
-  const {rules} = engine.config.baseConfig;
-  const defs = engine.getRules();
+      baseConfig: config,
+      useEslintrc: false,
+    }),
+    {rules} = engine.config.baseConfig,
+    defs = engine.getRules();
 
   for (const ruleId of Object.keys(rules)) {
-    const value = ruleValue(rules[ruleId]);
-    const docs = ruleDocs(ruleId, defs);
-    const {url: link} = docs;
+    const value = ruleValue(rules[ruleId]),
+      meta = ruleMeta(ruleId, defs);
 
     rules[ruleId] = {
       value,
-      link,
-      docs,
+      meta,
     };
   }
   return rules;
