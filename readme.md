@@ -81,10 +81,18 @@ module.exports = {
 
 ### Fixable
 
-|  #  | Type  | Rule                                                                                                   | Description                                        |
-| :-: | :---: | :----------------------------------------------------------------------------------------------------- | :------------------------------------------------- |
-|  1  | error | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)           | enforce component's data property to be a function |
-|  2  | error | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html) | require prop type to be a constructor              |
+|  #  | Type  | Rule                                                                                                           | Description                                                        |
+| :-: | :---: | :------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
+|  1  | warn  | [vue/attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)                         | enforce attribute naming style on custom components in template    |
+|  2  | warn  | [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)                                   | enforce order of attributes                                        |
+|  3  | warn  | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html) | enforce specific casing for the component naming style in template |
+|  4  | warn  | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                           | enforce specific casing for the name property in Vue components    |
+|  5  | error | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                   | enforce component's data property to be a function                 |
+|  6  | warn  | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                             | enforce order of properties in components                          |
+|  7  | warn  | [vue/prop-name-casing](https://eslint.vuejs.org/rules/prop-name-casing.html)                                   | enforce specific casing for the Prop name in Vue components        |
+|  8  | error | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)         | require prop type to be a constructor                              |
+|  9  | warn  | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                           | enforce `v-bind` directive style                                   |
+| 10  | warn  | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                               | enforce `v-on` directive style                                     |
 
 <!-- rules end -->
 

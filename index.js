@@ -8,7 +8,12 @@
 module.exports = {
   root: true,
   plugins: ['vue'],
-  extends: [require.resolve('@xwtec/eslint-config'), 'plugin:vue/essential'],
+  extends: [
+    require.resolve('./configs/fixable.js'),
+    require.resolve('@xwtec/eslint-config'),
+    require.resolve('eslint-config-prettier/vue'),
+    'plugin:vue/essential',
+  ],
   rules: {
     // allow unused vars
     'vue/no-unused-vars': 'off',

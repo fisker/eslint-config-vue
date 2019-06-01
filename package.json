@@ -10,6 +10,7 @@
     "vue"
   ],
   "files": [
+    "configs",
     "index.js"
   ],
   "scripts": {
@@ -27,6 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "@xwtec/eslint-config": "^6.0.5",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-vue": "^5.2.2"
   },
   "publishConfig": {
