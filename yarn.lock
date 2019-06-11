@@ -193,10 +193,10 @@
   resolved "https://registry.npm.taobao.org/@types/normalize-package-data/download/@types/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha1-5IbQ2XOW15vu3QpuM/RTT/a0lz4=
 
-"@xwtec/eslint-config@^6.0.6":
-  version "6.0.6"
-  resolved "https://registry.npmjs.org/@xwtec/eslint-config/-/eslint-config-6.0.6.tgz#93f75e488521cdb2479821822faf3e4e954ebecb"
-  integrity sha512-bOQCcqdQXLhbDIQq8cijfgsZgkW4Ue+nX65yY3Qlzr3WirOyoYy8fjAXc7K5xg7inRX6J2DbCgPxcgQ+zXesqg==
+"@xwtec/eslint-config@^6.0.7":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-6.0.7.tgz#df81fdf75b3e55b47f15f1bccaa70f2ae78bf4e3"
+  integrity sha512-gKV/vsFceAnBUoNS/QL2jxgxlGmKCOD8xbO6fAWVfmNfPGmi3tEd7YeDMlMGLnXSNP8bULPE6RK/xXc3scbN7w==
   dependencies:
     eslint-config-prettier "^4.3.0"
     eslint-plugin-prettier "^3.1.0"
