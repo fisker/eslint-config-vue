@@ -36,5 +36,10 @@ const rules = Object.fromEntries
     }, {});
 
 module.exports = {
-  rules,
+  rules: {
+    ...rules,
+
+    // https://eslint.vuejs.org/rules/component-name-in-template-casing.html
+    'vue/component-name-in-template-casing': ['warn', 'kebab-case'],
+  },
 };
