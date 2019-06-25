@@ -10,9 +10,7 @@ function getRules(config) {
     useEslintrc: false,
   });
 
-  engine.executeOnText('');
-
-  const {rules} = engine.getConfigForFile('');
+  const {rules} = engine.getConfigForFile('example.js');
   const defs = engine.getRules();
 
   for (const ruleId of Object.keys(rules)) {
