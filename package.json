@@ -57,7 +57,8 @@
     "markdownlint-cli": "^0.17.0",
     "mem": "^5.1.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "write-prettier-file": "1.0.2"
   },
   "peerDependencies": {
     "eslint": "*",

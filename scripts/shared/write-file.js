@@ -1,5 +1,6 @@
 import {dirname} from 'path';
 import {mkdirSync, writeFileSync, existsSync} from 'fs';
+import writePrettierFile from 'write-prettier-file';
 
 function writeFile(file, content) {
   const dir = dirname(file);
@@ -8,7 +9,7 @@ function writeFile(file, content) {
     mkdirSync(dir);
   }
 
-  writeFileSync(file, content);
+  writePrettierFile(file, content);
 }
 
 export default writeFile;
