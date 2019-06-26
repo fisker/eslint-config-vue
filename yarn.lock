@@ -193,12 +193,12 @@
   resolved "https://registry.npm.taobao.org/@types/normalize-package-data/download/@types/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha1-5IbQ2XOW15vu3QpuM/RTT/a0lz4=
 
-"@xwtec/eslint-config@^6.0.10":
-  version "6.0.11"
-  resolved "https://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-6.0.11.tgz?cache=0&sync_timestamp=1561428224865&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40xwtec%2Feslint-config%2Fdownload%2F%40xwtec%2Feslint-config-6.0.11.tgz#0415efaeec11a11846d6ad0d95fca85ffd8a7e53"
-  integrity sha1-BBXvruwRoRhG1q0NlfyoX/2KflM=
+"@xwtec/eslint-config@^6.0.12":
+  version "6.0.12"
+  resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-6.0.12.tgz#6466068b5932094acadcf3ebd7b52ac6658c6737"
+  integrity sha512-BHVqoJFMxkogGRILq40ZdmI/FERr0ymO8/+zpzlvObq9+P314c+zOTHgnZM3dcqWwGT8LONRnVf/x+m3QMUpWw==
   dependencies:
-    eslint-config-prettier "5.0.0"
+    eslint-config-prettier "6.0.0"
     eslint-plugin-prettier "3.1.0"
 
 "@xwtec/prettier-config@^1.0.2":
@@ -853,14 +853,7 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.4, escape-string-regexp@^
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-prettier@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npm.taobao.org/eslint-config-prettier/download/eslint-config-prettier-5.0.0.tgz#f7a94b2b8ae7cbf25842c36fa96c6d32cd0a697c"
-  integrity sha1-96lLK4rny/JYQsNvqWxtMs0KaXw=
-  dependencies:
-    get-stdin "^6.0.0"
-
-eslint-config-prettier@^6.0.0:
+eslint-config-prettier@6.0.0, eslint-config-prettier@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.0.0.tgz#f429a53bde9fc7660e6353910fd996d6284d3c25"
   integrity sha512-vDrcCFE3+2ixNT5H83g28bO/uYAwibJxerXPj+E7op4qzBCsAV36QfvdAyVOoNxKAH2Os/e01T/2x++V0LPukA==
