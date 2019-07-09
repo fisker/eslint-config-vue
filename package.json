@@ -58,7 +58,7 @@
     "mem": "^5.1.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "write-prettier-file": "1.1.0"
+    "write-prettier-file": "1.2.0"
   },
   "peerDependencies": {
     "eslint": "*",
