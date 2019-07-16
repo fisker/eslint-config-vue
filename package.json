@@ -14,19 +14,19 @@
     "index.js"
   ],
   "scripts": {
-    "release": "run-s build test format lint dist",
+    "build": "npm-run-all build:*",
+    "build:rules": "node -r esm ./scripts/rules",
     "dist": "run-p dist:*",
     "dist:npm": "np --yolo --no-yarn",
-    "test": "eslint **/*.js --config ./index.js",
+    "format": "run-p format:*",
+    "format:eslint": "yarn lint:eslint --fix",
+    "format:prettier": "prettier **/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml} --write",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint **/*.{js,mjs,vue}",
     "lint:markdown": "markdownlint **/*.md --ignore \"**/node_modules/**\"",
     "lint:prettier": "prettier **/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml} --check",
-    "format": "run-p format:*",
-    "format:eslint": "yarn lint:eslint --fix",
-    "format:prettier": "prettier **/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml} --write",
-    "build": "npm-run-all build:*",
-    "build:rules": "node -r esm ./scripts/rules"
+    "release": "run-s build test format lint dist",
+    "test": "eslint **/*.js --config ./index.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -49,7 +49,7 @@
     "@fisker/lint-staged-config": "^1.0.4",
     "@xwtec/eslint-config": "^6.0.12",
     "@xwtec/prettier-config": "^1.0.2",
-    "cz-conventional-changelog-emoji": "^0.1.0",
+    "cz-conventional-changelog": "2.1.0",
     "eslint": "^6.0.1",
     "esm": "^3.2.25",
     "husky": "^3.0.0",
@@ -66,7 +66,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog-emoji"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "bugs": {
