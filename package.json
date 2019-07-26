@@ -46,7 +46,7 @@
     "@commitlint/cli": "^8.1.0",
     "@fisker/commitlint-config": "^1.1.0",
     "@fisker/husky-config": "^1.1.0",
-    "@fisker/lint-staged-config": "^1.0.4",
+    "@fisker/lint-staged-config": "^1.0.5",
     "@xwtec/eslint-config": "^6.0.12",
     "@xwtec/prettier-config": "^1.0.2",
     "cz-conventional-changelog": "3.0.2",
