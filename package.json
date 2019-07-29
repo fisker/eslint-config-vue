@@ -52,7 +52,7 @@
     "cz-conventional-changelog": "3.0.2",
     "eslint": "^6.1.0",
     "esm": "^3.2.25",
-    "husky": "^3.0.1",
+    "husky": "^3.0.2",
     "lint-staged": "^9.2.1",
     "markdownlint-cli": "^0.17.0",
     "mem": "^5.1.1",
