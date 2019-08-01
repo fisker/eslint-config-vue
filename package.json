@@ -24,7 +24,7 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint **/*.{js,mjs,vue}",
     "lint:markdown": "markdownlint **/*.md --ignore \"**/node_modules/**\"",
-    "lint:prettier": "prettier **/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml} --check",
+    "lint:prettier": "prettier \"**/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml}\" --check",
     "release": "run-s build test format lint dist",
     "test": "eslint **/*.js --config ./index.js"
   },
@@ -38,10 +38,7 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xwtec/eslint-config-vue.git"
-  },
+  "repository": "xwtec/eslint-config-vue",
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@fisker/commitlint-config": "^1.1.2",
