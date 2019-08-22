@@ -5,8 +5,14 @@
  * check this https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/eslint-config-prettier/index.js
  */
 
+const base = require('@xwtec/eslint-config');
+
 module.exports = {
   root: true,
+  parserOptions: {
+    ...base.parserOptions,
+    parser: 'babel-eslint',
+  },
   plugins: ['vue'],
   extends: [
     require.resolve('./configs/fixable.js'),
