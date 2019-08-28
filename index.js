@@ -9,16 +9,17 @@ const base = require('@xwtec/eslint-config');
 
 module.exports = {
   root: true,
+  parser: require.resolve('vue-eslint-parser'),
   parserOptions: {
     ...base.parserOptions,
     parser: 'babel-eslint',
   },
   plugins: ['vue'],
   extends: [
+    'plugin:vue/essential',
     require.resolve('./configs/fixable.js'),
     require.resolve('@xwtec/eslint-config'),
     require.resolve('eslint-config-prettier/vue'),
-    'plugin:vue/essential',
   ],
   rules: {
     // allow unused vars
@@ -42,5 +43,7 @@ module.exports = {
     'vue/use-v-on-exact': 'off',
 
     'vue/valid-template-root': 'warn',
+
+    'vue/this-in-template': ['error', 'never'],
   },
 };

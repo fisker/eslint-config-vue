@@ -26,13 +26,14 @@
     "lint:markdown": "markdownlint **/*.md --ignore \"**/node_modules/**\"",
     "lint:prettier": "prettier \"**/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml}\" --check",
     "release": "run-s build test format lint dist",
-    "test": "eslint **/*.js --config ./index.js"
+    "test": "ava"
   },
   "license": "MIT",
   "dependencies": {
     "@xwtec/eslint-config": "^6.0.15",
     "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-vue": "^5.2.3"
+    "eslint-plugin-vue": "^5.2.3",
+    "vue-eslint-parser": "6.0.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -46,6 +47,7 @@
     "@fisker/lint-staged-config": "^1.0.5",
     "@xwtec/eslint-config": "^6.0.15",
     "@xwtec/prettier-config": "^1.0.3",
+    "ava": "2.3.0",
     "cz-conventional-changelog": "3.0.2",
     "eslint": "^6.2.2",
     "esm": "^3.2.25",
@@ -74,6 +76,11 @@
     "name": "xwtec",
     "url": "https://github.com/xwtec"
   },
-  "prettier": "@xwtec/prettier-config",
+  "ava": {
+    "require": [
+      "esm"
+    ],
+    "verbose": true
+  },
   "sideEffects": false
 }
