@@ -30,7 +30,10 @@ module.exports = {
 
     'vue/no-use-v-if-with-v-for': 'off',
 
-    'vue/require-component-is': 'warn',
+    // disable this
+    // set to `warn` when re-enable this rule
+    // https://github.com/vuejs/eslint-plugin-vue/issues/869
+    'vue/require-component-is': 'off',
 
     'vue/require-render-return': 'warn',
 
