@@ -16,9 +16,9 @@ module.exports = {
   },
   plugins: ['vue'],
   extends: [
+    require.resolve('@xwtec/eslint-config'),
     'plugin:vue/essential',
     require.resolve('./configs/fixable.js'),
-    require.resolve('@xwtec/eslint-config'),
     require.resolve('eslint-config-prettier/vue'),
   ],
   rules: {
