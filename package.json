@@ -43,7 +43,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@fisker/commitlint-config": "^1.1.2",
-    "@fisker/husky-config": "^1.1.1",
+    "@fisker/husky-config": "^1.1.2",
     "@fisker/lint-staged-config": "^1.0.5",
     "@xwtec/eslint-config": "^6.0.15",
     "@xwtec/prettier-config": "^1.0.3",
