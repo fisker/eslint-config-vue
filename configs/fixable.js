@@ -18,7 +18,7 @@ const ruleIDs = [
   'name-property-casing',
   'no-multi-spaces',
   'no-spaces-around-equal-signs-in-attribute',
-  'prop-name-casing',
+  // 'prop-name-casing', // removed from eslint-plugin-vue@6
   'singleline-html-element-content-newline',
   'v-bind-style',
   'v-on-style',
