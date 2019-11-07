@@ -32,7 +32,7 @@
   "dependencies": {
     "@xwtec/eslint-config": "^6.0.18",
     "eslint-config-prettier": "^6.5.0",
-    "eslint-plugin-vue": "^5.2.3",
+    "eslint-plugin-vue": "^6.0.0",
     "vue-eslint-parser": "6.0.4"
   },
   "publishConfig": {
