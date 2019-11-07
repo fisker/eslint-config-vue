@@ -18,7 +18,6 @@ const ruleIDs = [
   'name-property-casing',
   'no-multi-spaces',
   'no-spaces-around-equal-signs-in-attribute',
-  'prop-name-casing',
   'singleline-html-element-content-newline',
   'v-bind-style',
   'v-on-style',
