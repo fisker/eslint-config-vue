@@ -74,11 +74,10 @@ module.exports = {
 
 |  #  | Type | Rule                                                                                               | Description                                                     |
 | :-: | :--: | :------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------- |
-|  1  | warn | [vue/prop-name-casing](https://eslint.vuejs.org/rules/prop-name-casing.html)                       | enforce specific casing for the Prop name in Vue components     |
-|  2  | warn | [vue/require-render-return](https://eslint.vuejs.org/rules/require-render-return.html)             | enforce render function to always return value                  |
-|  3  | warn | [vue/require-valid-default-prop](https://eslint.vuejs.org/rules/require-valid-default-prop.html)   | enforce props default values to be valid                        |
-|  4  | warn | [vue/return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html) | enforce that a return statement is present in computed property |
-|  5  | warn | [vue/valid-template-root](https://eslint.vuejs.org/rules/valid-template-root.html)                 | enforce valid template root                                     |
+|  1  | warn | [vue/require-render-return](https://eslint.vuejs.org/rules/require-render-return.html)             | enforce render function to always return value                  |
+|  2  | warn | [vue/require-valid-default-prop](https://eslint.vuejs.org/rules/require-valid-default-prop.html)   | enforce props default values to be valid                        |
+|  3  | warn | [vue/return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html) | enforce that a return statement is present in computed property |
+|  4  | warn | [vue/valid-template-root](https://eslint.vuejs.org/rules/valid-template-root.html)                 | enforce valid template root                                     |
 
 ### Fixable
 
