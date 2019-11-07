@@ -6,12 +6,13 @@ import ESLint from 'eslint';
 const {CLIEngine} = ESLint;
 const fixture = path.join.bind(path, __dirname, 'fixtures');
 
+const cli = new CLIEngine({
+  ignore: false,
+  useEslintrc: false,
+  configFile: require.resolve('..'),
+});
+
 function getESLintReport(file) {
-  const cli = new CLIEngine({
-    ignore: false,
-    useEslintrc: false,
-    configFile: require.resolve('..'),
-  });
   const report = cli.executeOnFiles([fixture(file)]);
   report.results = report.results.map(result => {
     delete result.filePath;

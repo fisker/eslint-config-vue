@@ -18,7 +18,7 @@ const ruleIDs = [
   'name-property-casing',
   'no-multi-spaces',
   'no-spaces-around-equal-signs-in-attribute',
-  // 'prop-name-casing', // removed from eslint-plugin-vue@6
+  'prop-name-casing',
   'singleline-html-element-content-newline',
   'v-bind-style',
   'v-on-style',
@@ -29,9 +29,9 @@ const ruleIDs = [
 ];
 
 const rules = Object.fromEntries
-  ? Object.fromEntries(ruleIDs.map(rule => [rule, 'warn']))
-  : ruleIDs.reduce((rules, id) => {
-      rules[`vue/${id}`] = 'warn';
+  ? Object.fromEntries(ruleIDs.map(ruleId => [`vue/${ruleId}`, 'warn']))
+  : ruleIDs.reduce((rules, ruleId) => {
+      rules[`vue/${ruleId}`] = 'warn';
       return rules;
     }, {});
 

@@ -74,10 +74,11 @@ module.exports = {
 
 |  #  | Type | Rule                                                                                               | Description                                                     |
 | :-: | :--: | :------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------- |
-|  1  | warn | [vue/require-render-return](https://eslint.vuejs.org/rules/require-render-return.html)             | enforce render function to always return value                  |
-|  2  | warn | [vue/require-valid-default-prop](https://eslint.vuejs.org/rules/require-valid-default-prop.html)   | enforce props default values to be valid                        |
-|  3  | warn | [vue/return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html) | enforce that a return statement is present in computed property |
-|  4  | warn | [vue/valid-template-root](https://eslint.vuejs.org/rules/valid-template-root.html)                 | enforce valid template root                                     |
+|  1  | warn | [vue/prop-name-casing](https://eslint.vuejs.org/rules/prop-name-casing.html)                       | enforce specific casing for the Prop name in Vue components     |
+|  2  | warn | [vue/require-render-return](https://eslint.vuejs.org/rules/require-render-return.html)             | enforce render function to always return value                  |
+|  3  | warn | [vue/require-valid-default-prop](https://eslint.vuejs.org/rules/require-valid-default-prop.html)   | enforce props default values to be valid                        |
+|  4  | warn | [vue/return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html) | enforce that a return statement is present in computed property |
+|  5  | warn | [vue/valid-template-root](https://eslint.vuejs.org/rules/valid-template-root.html)                 | enforce valid template root                                     |
 
 ### Fixable
 
@@ -89,10 +90,9 @@ module.exports = {
 |  4  | warn | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                           | enforce specific casing for the name property in Vue components    |
 |  5  | warn | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                   | enforce component's data property to be a function                 |
 |  6  | warn | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                             | enforce order of properties in components                          |
-|  7  | warn | [vue/prop-name-casing](https://eslint.vuejs.org/rules/prop-name-casing.html)                                   | enforce specific casing for the Prop name in Vue components        |
-|  8  | warn | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)         | require prop type to be a constructor                              |
-|  9  | warn | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                           | enforce `v-bind` directive style                                   |
-| 10  | warn | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                               | enforce `v-on` directive style                                     |
+|  7  | warn | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)         | require prop type to be a constructor                              |
+|  8  | warn | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                           | enforce `v-bind` directive style                                   |
+|  9  | warn | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                               | enforce `v-on` directive style                                     |
 
 <!-- rules end -->
 
