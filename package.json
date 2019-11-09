@@ -33,7 +33,7 @@
     "@xwtec/eslint-config": "^6.0.18",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-vue": "^6.0.0",
-    "vue-eslint-parser": "6.0.5"
+    "vue-eslint-parser": "7.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
