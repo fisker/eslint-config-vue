@@ -31,7 +31,7 @@
   "license": "MIT",
   "dependencies": {
     "@xwtec/eslint-config": "^6.0.18",
-    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-prettier": "^6.6.0",
     "eslint-plugin-vue": "^6.0.1",
     "vue-eslint-parser": "7.0.0"
   },
