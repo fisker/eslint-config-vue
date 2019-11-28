@@ -44,7 +44,7 @@
     "@commitlint/cli": "8.2.0",
     "@fisker/commitlint-config": "1.1.4",
     "@fisker/husky-config": "1.1.5",
-    "@fisker/lint-staged-config": "1.0.7",
+    "@fisker/lint-staged-config": "1.0.8",
     "@xwtec/eslint-config": "6.0.20",
     "@xwtec/prettier-config": "1.0.3",
     "ava": "2.4.0",
