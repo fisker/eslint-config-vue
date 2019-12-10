@@ -1,18 +1,29 @@
 {
   "name": "@xwtec/eslint-config-vue",
-  "version": "6.0.4",
+  "version": "6.0.5",
   "description": "ESLint Configuration for xwtec vue projects",
-  "main": "index.js",
   "keywords": [
-    "xwtec",
-    "eslint",
     "config",
-    "vue"
+    "eslint",
+    "vue",
+    "xwtec"
   ],
+  "homepage": "https://github.com/xwtec/eslint-config-vue#readme",
+  "bugs": {
+    "url": "https://github.com/xwtec/eslint-config-vue/issues"
+  },
+  "repository": "xwtec/eslint-config-vue",
+  "license": "MIT",
+  "author": {
+    "name": "xwtec",
+    "url": "https://github.com/xwtec"
+  },
   "files": [
     "configs",
     "index.js"
   ],
+  "sideEffects": false,
+  "main": "index.js",
   "scripts": {
     "build": "npm-run-all build:*",
     "build:rules": "node -r esm ./scripts/rules",
@@ -28,18 +39,23 @@
     "release": "run-s build test format lint dist",
     "test": "ava"
   },
-  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ],
+    "verbose": true
+  },
   "dependencies": {
     "@xwtec/eslint-config": "6.0.21",
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-vue": "6.0.1",
     "vue-eslint-parser": "7.0.0"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "repository": "xwtec/eslint-config-vue",
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@fisker/commitlint-config": "1.1.4",
@@ -63,24 +79,8 @@
     "eslint": "*",
     "prettier": "*"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "bugs": {
-    "url": "https://github.com/xwtec/eslint-config-vue/issues"
-  },
-  "homepage": "https://github.com/xwtec/eslint-config-vue#readme",
-  "author": {
-    "name": "xwtec",
-    "url": "https://github.com/xwtec"
-  },
-  "ava": {
-    "require": [
-      "esm"
-    ],
-    "verbose": true
-  },
-  "sideEffects": false
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
