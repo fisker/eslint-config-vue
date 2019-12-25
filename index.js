@@ -22,8 +22,8 @@ module.exports = {
     require.resolve('eslint-config-prettier/vue'),
   ],
   rules: {
-    // allow unused vars
-    'vue/no-unused-vars': 'off',
+    // disallow unused vars
+    'vue/no-unused-vars': 'warn',
 
     // allow unused components
     'vue/no-unused-components': 'off',
