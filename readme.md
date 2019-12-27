@@ -74,26 +74,32 @@ module.exports = {
 
 |  #  | Type | Rule                                                                                               | Description                                                                  |
 | :-: | :--: | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
-|  1  | warn | [vue/no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)                           | disallow unused variable definitions of v-for directives or scope attributes |
-|  2  | warn | [vue/prop-name-casing](https://eslint.vuejs.org/rules/prop-name-casing.html)                       | enforce specific casing for the Prop name in Vue components                  |
-|  3  | warn | [vue/require-render-return](https://eslint.vuejs.org/rules/require-render-return.html)             | enforce render function to always return value                               |
-|  4  | warn | [vue/require-valid-default-prop](https://eslint.vuejs.org/rules/require-valid-default-prop.html)   | enforce props default values to be valid                                     |
-|  5  | warn | [vue/return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html) | enforce that a return statement is present in computed property              |
-|  6  | warn | [vue/valid-template-root](https://eslint.vuejs.org/rules/valid-template-root.html)                 | enforce valid template root                                                  |
+|  1  | warn | [vue/no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html) | disallow the use of reserved names in component definitions                  |
+|  2  | warn | [vue/no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)                           | disallow unused variable definitions of v-for directives or scope attributes |
+|  3  | warn | [vue/prop-name-casing](https://eslint.vuejs.org/rules/prop-name-casing.html)                       | enforce specific casing for the Prop name in Vue components                  |
+|  4  | warn | [vue/require-render-return](https://eslint.vuejs.org/rules/require-render-return.html)             | enforce render function to always return value                               |
+|  5  | warn | [vue/require-valid-default-prop](https://eslint.vuejs.org/rules/require-valid-default-prop.html)   | enforce props default values to be valid                                     |
+|  6  | warn | [vue/return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html) | enforce that a return statement is present in computed property              |
+|  7  | warn | [vue/valid-template-root](https://eslint.vuejs.org/rules/valid-template-root.html)                 | enforce valid template root                                                  |
+|  8  | warn | [vue/valid-v-bind-sync](https://eslint.vuejs.org/rules/valid-v-bind-sync.html)                     | enforce valid `.sync` modifier on `v-bind` directives                        |
 
 ### Fixable
 
-|  #  | Type | Rule                                                                                                           | Description                                                        |
-| :-: | :--: | :------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
-|  1  | warn | [vue/attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)                         | enforce attribute naming style on custom components in template    |
-|  2  | warn | [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)                                   | enforce order of attributes                                        |
-|  3  | warn | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html) | enforce specific casing for the component naming style in template |
-|  4  | warn | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                           | enforce specific casing for the name property in Vue components    |
-|  5  | warn | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                   | enforce component's data property to be a function                 |
-|  6  | warn | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                             | enforce order of properties in components                          |
-|  7  | warn | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)         | require prop type to be a constructor                              |
-|  8  | warn | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                           | enforce `v-bind` directive style                                   |
-|  9  | warn | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                               | enforce `v-on` directive style                                     |
+|  #  | Type | Rule                                                                                                             | Description                                                        |
+| :-: | :--: | :--------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
+|  1  | warn | [vue/attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)                           | enforce attribute naming style on custom components in template    |
+|  2  | warn | [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)                                     | enforce order of attributes                                        |
+|  3  | warn | [vue/component-definition-name-casing](https://eslint.vuejs.org/rules/component-definition-name-casing.html)     | enforce specific casing for component definition name              |
+|  4  | warn | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)   | enforce specific casing for the component naming style in template |
+|  5  | warn | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                             | enforce specific casing for the name property in Vue components    |
+|  6  | warn | [vue/no-deprecated-slot-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-attribute.html)             | disallow deprecated `slot` attribute (in Vue.js 2.6.0+)            |
+|  7  | warn | [vue/no-deprecated-slot-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-scope-attribute.html) | disallow deprecated `slot-scope` attribute (in Vue.js 2.6.0+)      |
+|  8  | warn | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                     | enforce component's data property to be a function                 |
+|  9  | warn | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                               | enforce order of properties in components                          |
+| 10  | warn | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)           | require prop type to be a constructor                              |
+| 11  | warn | [vue/static-class-names-order](https://eslint.vuejs.org/rules/static-class-names-order.html)                     | enforce static class names order                                   |
+| 12  | warn | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                             | enforce `v-bind` directive style                                   |
+| 13  | warn | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                                 | enforce `v-on` directive style                                     |
 
 <!-- rules end -->
 
