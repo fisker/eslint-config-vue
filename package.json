@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@xwtec/eslint-config": "6.1.1",
-    "eslint-config-prettier": "6.8.0",
+    "eslint-config-prettier": "6.9.0",
     "eslint-plugin-vue": "6.1.1",
     "vue-eslint-parser": "7.0.0"
   },
