@@ -88,17 +88,15 @@ module.exports = {
 | :-: | :--: | :--------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
 |  1  | warn | [vue/attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)                           | enforce attribute naming style on custom components in template    |
 |  2  | warn | [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)                                     | enforce order of attributes                                        |
-|  3  | warn | [vue/component-definition-name-casing](https://eslint.vuejs.org/rules/component-definition-name-casing.html)     | enforce specific casing for component definition name              |
-|  4  | warn | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)   | enforce specific casing for the component naming style in template |
-|  5  | warn | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                             | enforce specific casing for the name property in Vue components    |
-|  6  | warn | [vue/no-deprecated-slot-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-attribute.html)             | disallow deprecated `slot` attribute (in Vue.js 2.6.0+)            |
-|  7  | warn | [vue/no-deprecated-slot-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-scope-attribute.html) | disallow deprecated `slot-scope` attribute (in Vue.js 2.6.0+)      |
-|  8  | warn | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                     | enforce component's data property to be a function                 |
-|  9  | warn | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                               | enforce order of properties in components                          |
-| 10  | warn | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)           | require prop type to be a constructor                              |
-| 11  | warn | [vue/static-class-names-order](https://eslint.vuejs.org/rules/static-class-names-order.html)                     | enforce static class names order                                   |
-| 12  | warn | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                             | enforce `v-bind` directive style                                   |
-| 13  | warn | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                                 | enforce `v-on` directive style                                     |
+|  3  | warn | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)   | enforce specific casing for the component naming style in template |
+|  4  | warn | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                             | enforce specific casing for the name property in Vue components    |
+|  5  | warn | [vue/no-deprecated-slot-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-attribute.html)             | disallow deprecated `slot` attribute (in Vue.js 2.6.0+)            |
+|  6  | warn | [vue/no-deprecated-slot-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-scope-attribute.html) | disallow deprecated `slot-scope` attribute (in Vue.js 2.6.0+)      |
+|  7  | warn | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                     | enforce component's data property to be a function                 |
+|  8  | warn | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                               | enforce order of properties in components                          |
+|  9  | warn | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)           | require prop type to be a constructor                              |
+| 10  | warn | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                             | enforce `v-bind` directive style                                   |
+| 11  | warn | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                                 | enforce `v-on` directive style                                     |
 
 <!-- rules end -->
 

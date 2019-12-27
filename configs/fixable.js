@@ -47,9 +47,9 @@ module.exports = {
     'vue/component-name-in-template-casing': ['warn', 'kebab-case'],
 
     // This is annoying, and useless
-    'static-class-names-order': 'off',
+    'vue/static-class-names-order': 'off',
 
     // Buggy, will enable later
-    'component-definition-name-casing': 'off',
+    'vue/component-definition-name-casing': 'off',
   },
 };
