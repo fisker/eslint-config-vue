@@ -22,12 +22,14 @@ const ruleIDs = [
   'no-spaces-around-equal-signs-in-attribute',
   'prop-name-casing',
   'singleline-html-element-content-newline',
+  // This is annoying, and useless
   'static-class-names-order',
   'v-bind-style',
   'v-on-style',
   'attributes-order',
   'order-in-components',
   'component-name-in-template-casing',
+  // buggy
   'component-definition-name-casing',
   'script-indent',
 ];
