@@ -49,8 +49,7 @@ module.exports = {
 
     'vue/this-in-template': ['error', 'never'],
 
-    // buggy
-    'vue/no-reserved-component-names': 'off',
+    'vue/no-reserved-component-names': 'warn',
 
     'vue/valid-v-bind-sync': 'warn',
   },

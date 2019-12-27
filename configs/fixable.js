@@ -48,8 +48,5 @@ module.exports = {
 
     // This is annoying, and useless
     'vue/static-class-names-order': 'off',
-
-    // Buggy, will enable later
-    'vue/component-definition-name-casing': 'off',
   },
 };
