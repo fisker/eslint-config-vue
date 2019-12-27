@@ -48,5 +48,9 @@ module.exports = {
     'vue/valid-template-root': 'warn',
 
     'vue/this-in-template': ['error', 'never'],
+
+    'vue/no-reserved-component-names': 'warn',
+
+    'vue/valid-v-bind-sync': 'warn',
   },
 };
