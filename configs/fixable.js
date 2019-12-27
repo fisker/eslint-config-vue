@@ -48,5 +48,11 @@ module.exports = {
 
     // This is annoying, and useless
     'vue/static-class-names-order': 'off',
+
+    // disable for now, not fixable
+    'vue/no-deprecated-slot-attribute': 'off',
+
+    // useless
+    'vue/component-definition-name-casing': 'off',
   },
 };
