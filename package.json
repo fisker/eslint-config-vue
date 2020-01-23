@@ -60,7 +60,7 @@
     "@commitlint/cli": "8.3.5",
     "@fisker/commitlint-config": "1.1.4",
     "@fisker/husky-config": "1.1.5",
-    "@fisker/lint-staged-config": "1.0.8",
+    "@fisker/lint-staged-config": "1.0.10",
     "@xwtec/eslint-config": "6.1.1",
     "@xwtec/prettier-config": "1.0.3",
     "ava": "3.0.0",
