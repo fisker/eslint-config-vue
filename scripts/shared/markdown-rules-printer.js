@@ -30,7 +30,7 @@ function markdown(data) {
       meta.docs.description,
     ]),
   ]
-    .map(parts => parts.join('|'))
+    .map((parts) => parts.join('|'))
     .join('\n');
 }
 

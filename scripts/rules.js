@@ -10,7 +10,7 @@ import config from '..';
 const rules = getRules(config);
 const data = Object.keys(rules)
   .sort(sortRuleId)
-  .map(ruleId => ({
+  .map((ruleId) => ({
     ...parseRuleId(ruleId),
     ...rules[ruleId],
   }))

@@ -33,7 +33,7 @@ const ruleIDs = [
 ];
 
 const rules = Object.fromEntries
-  ? Object.fromEntries(ruleIDs.map(ruleId => [`vue/${ruleId}`, 'warn']))
+  ? Object.fromEntries(ruleIDs.map((ruleId) => [`vue/${ruleId}`, 'warn']))
   : ruleIDs.reduce((rules, ruleId) => {
       rules[`vue/${ruleId}`] = 'warn';
       return rules;

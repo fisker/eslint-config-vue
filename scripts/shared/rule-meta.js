@@ -11,4 +11,4 @@ function getRuleDocs(ruleId, defs) {
   };
 }
 
-export default mem(getRuleDocs, {cacheKey: ruleId => ruleId});
+export default mem(getRuleDocs, {cacheKey: (ruleId) => ruleId});
