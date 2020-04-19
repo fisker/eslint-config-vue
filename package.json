@@ -70,7 +70,7 @@
     "@fisker/lint-staged-config": "2.1.0",
     "@xwtec/eslint-config": "6.2.0",
     "@xwtec/prettier-config": "2.0.0",
-    "ava": "3.7.0",
+    "ava": "3.7.1",
     "cz-conventional-changelog": "3.1.0",
     "eslint": "6.8.0",
     "esm": "3.2.25",
