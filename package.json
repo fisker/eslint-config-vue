@@ -57,7 +57,7 @@
     "verbose": true
   },
   "dependencies": {
-    "@xwtec/eslint-config": "6.2.0",
+    "@xwtec/eslint-config": "6.3.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-vue": "6.2.2",
     "vue-eslint-parser": "7.0.0"
@@ -68,7 +68,7 @@
     "@fisker/commitlint-config": "1.1.7",
     "@fisker/husky-config": "2.1.1",
     "@fisker/lint-staged-config": "2.1.0",
-    "@xwtec/eslint-config": "6.2.0",
+    "@xwtec/eslint-config": "6.3.0",
     "@xwtec/prettier-config": "2.0.1",
     "ava": "3.7.1",
     "cz-conventional-changelog": "3.1.0",
