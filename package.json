@@ -42,7 +42,9 @@
     "lint:package-json": "yarn run format:package-json --check",
     "lint:prettier": "prettier \"**/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml}\" --check",
     "release": "run-s build test format lint dist",
-    "test": "ava"
+    "test": "ava",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "config": {
     "commitizen": {
@@ -60,7 +62,8 @@
     "@xwtec/eslint-config": "6.3.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-vue": "6.2.2",
-    "vue-eslint-parser": "7.0.0"
+    "vue-eslint-parser": "7.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@ava/babel": "1.0.1",
@@ -90,5 +93,6 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "snyk": true
 }
