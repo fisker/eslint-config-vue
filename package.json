@@ -60,7 +60,7 @@
     "@xwtec/eslint-config": "6.3.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-vue": "6.2.2",
-    "vue-eslint-parser": "7.0.0"
+    "vue-eslint-parser": "7.1.0"
   },
   "devDependencies": {
     "@ava/babel": "1.0.1",
