@@ -66,7 +66,7 @@
     "@ava/babel": "1.0.1",
     "@commitlint/cli": "9.0.1",
     "@fisker/commitlint-config": "1.2.0",
-    "@fisker/husky-config": "2.2.0",
+    "@fisker/husky-config": "2.2.1",
     "@fisker/lint-staged-config": "2.2.0",
     "@xwtec/eslint-config": "6.3.1",
     "@xwtec/prettier-config": "2.0.1",
