@@ -50,10 +50,6 @@
     }
   },
   "ava": {
-    "babel": true,
-    "require": [
-      "esm"
-    ],
     "verbose": true
   },
   "dependencies": {
@@ -63,7 +59,6 @@
     "vue-eslint-parser": "7.1.0"
   },
   "devDependencies": {
-    "@ava/babel": "1.0.1",
     "@commitlint/cli": "9.0.1",
     "@fisker/commitlint-config": "1.2.0",
     "@fisker/husky-config": "2.2.0",
