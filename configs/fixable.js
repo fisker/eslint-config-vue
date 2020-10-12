@@ -1,31 +1,70 @@
 // Fixable rules
 
-const {rules} = require('eslint-plugin-vue');
+const {rules: allRules} = require('eslint-plugin-vue');
 
-const fixableRules = {};
+const disabledRules = new Set([
+  // This is annoying, and useless
+  'static-class-names-order',
+
+  // Disable for now, not fixable
+  'no-deprecated-slot-attribute',
+
+  // Useless
+  'component-definition-name-casing',
+
+  // Useless
+  'no-boolean-default',
+
+  // Prettier can take care of them
+  'object-property-newline',
+  'no-extra-parens',
+
+  // It's not safe for case bellow:
+  // ```vue
+  // <template>
+  //   <div @click="methodRequiresNoArgumentsOrOneArgument()" @event2="methodRequiresNoArgumentsOrOneArgument(1)"></div>
+  // </template>
+  // <script>
+  // export default {
+  //   methods: {
+  //     methodRequiresNoArgumentsOrOneArgument(paramter) {
+  //       if (paramter) {
+  //         foo()
+  //       } else {
+  //         bar()
+  //       }
+  //     }
+  //   }
+  // }
+  // </script>
+  // ```
+  'v-on-function-call',
+
+  // Auto-fixed code is invalid in `vue@2`
+  // `<el-dialog :visible.sync="foo"></el-dialog>` -> `<el-dialog v-model:visible="foo"></el-dialog>`
+  'no-deprecated-v-bind-sync',
+
+  // HTML inside comment is not correctly indented
+  'html-comment-content-newline',
+  'html-comment-indent',
+]);
+
+const rules = {};
 for (const [
   ruleId,
   {
     meta: {fixable},
   },
-] of Object.entries(rules)) {
+] of Object.entries(allRules)) {
   if (fixable) {
-    fixableRules[`vue/${ruleId}`] = 'warn';
+    rules[`vue/${ruleId}`] = disabledRules.has(ruleId) ? 'off' : 'warn';
   }
 }
 
 // https://eslint.vuejs.org/rules/component-name-in-template-casing.html
-fixableRules['vue/component-name-in-template-casing'] = ['warn', 'kebab-case'];
+rules['vue/component-name-in-template-casing'] = ['warn', 'kebab-case'];
 
-// This is annoying, and useless
-delete fixableRules['vue/static-class-names-order'];
+// Prefer `v-for="… of …"`
+rules['vue/v-for-delimiter-style'] = ['warn', 'of'];
 
-// disable for now, not fixable
-delete fixableRules['vue/no-deprecated-slot-attribute'];
-
-// useless
-delete fixableRules['vue/component-definition-name-casing'];
-
-module.exports = {
-  rules: fixableRules,
-};
+module.exports = {rules};
