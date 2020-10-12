@@ -14,20 +14,18 @@ for (const [
   }
 }
 
+// https://eslint.vuejs.org/rules/component-name-in-template-casing.html
+fixableRules['vue/component-name-in-template-casing'] = ['warn', 'kebab-case'];
+
+// This is annoying, and useless
+delete fixableRules['vue/static-class-names-order'];
+
+// disable for now, not fixable
+delete fixableRules['vue/no-deprecated-slot-attribute'];
+
+// useless
+delete fixableRules['vue/component-definition-name-casing'];
+
 module.exports = {
-  rules: {
-    ...fixableRules,
-
-    // https://eslint.vuejs.org/rules/component-name-in-template-casing.html
-    'vue/component-name-in-template-casing': ['warn', 'kebab-case'],
-
-    // This is annoying, and useless
-    'vue/static-class-names-order': 'off',
-
-    // disable for now, not fixable
-    'vue/no-deprecated-slot-attribute': 'off',
-
-    // useless
-    'vue/component-definition-name-casing': 'off',
-  },
+  rules: fixableRules,
 };
