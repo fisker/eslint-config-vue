@@ -94,39 +94,32 @@ module.exports = {
 
 ### Fixable
 
-|  #  | Type | Rule                                                                                                                   | Description                                                                    |
-| :-: | :--: | :--------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------- |
-|  1  | warn | [vue/attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)                                 | enforce attribute naming style on custom components in template                |
-|  2  | warn | [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)                                           | enforce order of attributes                                                    |
-|  3  | warn | [vue/comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html)                                                 | enforce consistent spacing before and after commas                             |
-|  4  | warn | [vue/comma-style](https://eslint.vuejs.org/rules/comma-style.html)                                                     | enforce consistent comma style                                                 |
-|  5  | warn | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)         | enforce specific casing for the component naming style in template             |
-|  6  | warn | [vue/dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)                                                   | enforce dot notation whenever possible                                         |
-|  7  | warn | [vue/eqeqeq](https://eslint.vuejs.org/rules/eqeqeq.html)                                                               | require the use of `===` and `!==`                                             |
-|  8  | warn | [vue/func-call-spacing](https://eslint.vuejs.org/rules/func-call-spacing.html)                                         | require or disallow spacing between function identifiers and their invocations |
-|  9  | warn | [vue/html-comment-content-spacing](https://eslint.vuejs.org/rules/html-comment-content-spacing.html)                   | enforce unified spacing in HTML comments                                       |
-| 10  | warn | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                                   | enforce specific casing for the name property in Vue components                |
-| 11  | warn | [vue/no-deprecated-data-object-declaration](https://eslint.vuejs.org/rules/no-deprecated-data-object-declaration.html) | disallow using deprecated object declaration on data (in Vue.js 3.0.0+)        |
-| 12  | warn | [vue/no-deprecated-dollar-scopedslots-api](https://eslint.vuejs.org/rules/no-deprecated-dollar-scopedslots-api.html)   | disallow using deprecated `$scopedSlots` (in Vue.js 3.0.0+)                    |
-| 13  | warn | [vue/no-deprecated-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-scope-attribute.html)                 | disallow deprecated `scope` attribute (in Vue.js 2.5.0+)                       |
-| 14  | warn | [vue/no-deprecated-slot-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-scope-attribute.html)       | disallow deprecated `slot-scope` attribute (in Vue.js 2.6.0+)                  |
-| 15  | warn | [vue/no-deprecated-v-on-number-modifiers](https://eslint.vuejs.org/rules/no-deprecated-v-on-number-modifiers.html)     | disallow using deprecated number (keycode) modifiers (in Vue.js 3.0.0+)        |
-| 16  | warn | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                           | enforce component's data property to be a function                             |
-| 17  | warn | [vue/no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)                             | disallow unsupported Vue.js syntax on the specified version                    |
-| 18  | warn | [vue/no-useless-mustaches](https://eslint.vuejs.org/rules/no-useless-mustaches.html)                                   | disallow unnecessary mustache interpolations                                   |
-| 19  | warn | [vue/no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html)                                         | disallow unnecessary `v-bind` directives                                       |
-| 20  | warn | [vue/object-curly-newline](https://eslint.vuejs.org/rules/object-curly-newline.html)                                   | enforce consistent line breaks inside braces                                   |
-| 21  | warn | [vue/operator-linebreak](https://eslint.vuejs.org/rules/operator-linebreak.html)                                       | enforce consistent linebreak style for operators                               |
-| 22  | warn | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                                     | enforce order of properties in components                                      |
-| 23  | warn | [vue/padding-line-between-blocks](https://eslint.vuejs.org/rules/padding-line-between-blocks.html)                     | require or disallow padding lines between blocks                               |
-| 24  | warn | [vue/prefer-template](https://eslint.vuejs.org/rules/prefer-template.html)                                             | require template literals instead of string concatenation                      |
-| 25  | warn | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)                 | require prop type to be a constructor                                          |
-| 26  | warn | [vue/space-in-parens](https://eslint.vuejs.org/rules/space-in-parens.html)                                             | enforce consistent spacing inside parentheses                                  |
-| 27  | warn | [vue/template-curly-spacing](https://eslint.vuejs.org/rules/template-curly-spacing.html)                               | require or disallow spacing around embedded expressions of template strings    |
-| 28  | warn | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                                   | enforce `v-bind` directive style                                               |
-| 29  | warn | [vue/v-for-delimiter-style](https://eslint.vuejs.org/rules/v-for-delimiter-style.html)                                 | enforce `v-for` directive's delimiter style                                    |
-| 30  | warn | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                                       | enforce `v-on` directive style                                                 |
-| 31  | warn | [vue/v-slot-style](https://eslint.vuejs.org/rules/v-slot-style.html)                                                   | enforce `v-slot` directive style                                               |
+|  #  | Type | Rule                                                                                                                   | Description                                                             |
+| :-: | :--: | :--------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
+|  1  | warn | [vue/attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)                                 | enforce attribute naming style on custom components in template         |
+|  2  | warn | [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)                                           | enforce order of attributes                                             |
+|  3  | warn | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)         | enforce specific casing for the component naming style in template      |
+|  4  | warn | [vue/dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)                                                   | enforce dot notation whenever possible                                  |
+|  5  | warn | [vue/eqeqeq](https://eslint.vuejs.org/rules/eqeqeq.html)                                                               | require the use of `===` and `!==`                                      |
+|  6  | warn | [vue/html-comment-content-spacing](https://eslint.vuejs.org/rules/html-comment-content-spacing.html)                   | enforce unified spacing in HTML comments                                |
+|  7  | warn | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                                   | enforce specific casing for the name property in Vue components         |
+|  8  | warn | [vue/no-deprecated-data-object-declaration](https://eslint.vuejs.org/rules/no-deprecated-data-object-declaration.html) | disallow using deprecated object declaration on data (in Vue.js 3.0.0+) |
+|  9  | warn | [vue/no-deprecated-dollar-scopedslots-api](https://eslint.vuejs.org/rules/no-deprecated-dollar-scopedslots-api.html)   | disallow using deprecated `$scopedSlots` (in Vue.js 3.0.0+)             |
+| 10  | warn | [vue/no-deprecated-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-scope-attribute.html)                 | disallow deprecated `scope` attribute (in Vue.js 2.5.0+)                |
+| 11  | warn | [vue/no-deprecated-slot-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-scope-attribute.html)       | disallow deprecated `slot-scope` attribute (in Vue.js 2.6.0+)           |
+| 12  | warn | [vue/no-deprecated-v-on-number-modifiers](https://eslint.vuejs.org/rules/no-deprecated-v-on-number-modifiers.html)     | disallow using deprecated number (keycode) modifiers (in Vue.js 3.0.0+) |
+| 13  | warn | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                           | enforce component's data property to be a function                      |
+| 14  | warn | [vue/no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)                             | disallow unsupported Vue.js syntax on the specified version             |
+| 15  | warn | [vue/no-useless-mustaches](https://eslint.vuejs.org/rules/no-useless-mustaches.html)                                   | disallow unnecessary mustache interpolations                            |
+| 16  | warn | [vue/no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html)                                         | disallow unnecessary `v-bind` directives                                |
+| 17  | warn | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                                     | enforce order of properties in components                               |
+| 18  | warn | [vue/padding-line-between-blocks](https://eslint.vuejs.org/rules/padding-line-between-blocks.html)                     | require or disallow padding lines between blocks                        |
+| 19  | warn | [vue/prefer-template](https://eslint.vuejs.org/rules/prefer-template.html)                                             | require template literals instead of string concatenation               |
+| 20  | warn | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)                 | require prop type to be a constructor                                   |
+| 21  | warn | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                                   | enforce `v-bind` directive style                                        |
+| 22  | warn | [vue/v-for-delimiter-style](https://eslint.vuejs.org/rules/v-for-delimiter-style.html)                                 | enforce `v-for` directive's delimiter style                             |
+| 23  | warn | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                                       | enforce `v-on` directive style                                          |
+| 24  | warn | [vue/v-slot-style](https://eslint.vuejs.org/rules/v-slot-style.html)                                                   | enforce `v-slot` directive style                                        |
 
 <!-- rules end -->
 
