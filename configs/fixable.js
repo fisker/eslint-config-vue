@@ -15,10 +15,6 @@ const disabledRules = new Set([
   // Useless
   'no-boolean-default',
 
-  // Prettier can take care of them
-  'object-property-newline',
-  'no-extra-parens',
-
   // It's not safe for case bellow:
   // ```vue
   // <template>
