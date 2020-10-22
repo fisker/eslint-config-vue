@@ -52,5 +52,7 @@ module.exports = {
     'vue/no-reserved-component-names': 'warn',
 
     'vue/valid-v-bind-sync': 'warn',
+
+    'vue/no-mutating-props': 'warn',
   },
 };

@@ -56,41 +56,41 @@ module.exports = {
 |  9  | error | [vue/no-dupe-v-else-if](https://eslint.vuejs.org/rules/no-dupe-v-else-if.html)                                           | disallow duplicate conditions in `v-if` / `v-else-if` chains            |
 | 10  | error | [vue/no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)                               | disallow duplication of attributes                                      |
 | 11  | error | [vue/no-multiple-template-root](https://eslint.vuejs.org/rules/no-multiple-template-root.html)                           | disallow adding multiple root nodes to the template                     |
-| 12  | error | [vue/no-mutating-props](https://eslint.vuejs.org/rules/no-mutating-props.html)                                           | disallow mutation of component props                                    |
-| 13  | error | [vue/no-parsing-error](https://eslint.vuejs.org/rules/no-parsing-error.html)                                             | disallow parsing errors in `<template>`                                 |
-| 14  | error | [vue/no-reserved-keys](https://eslint.vuejs.org/rules/no-reserved-keys.html)                                             | disallow overwriting reserved keys                                      |
-| 15  | error | [vue/no-side-effects-in-computed-properties](https://eslint.vuejs.org/rules/no-side-effects-in-computed-properties.html) | disallow side effects in computed properties                            |
-| 16  | error | [vue/no-template-key](https://eslint.vuejs.org/rules/no-template-key.html)                                               | disallow `key` attribute on `<template>`                                |
-| 17  | error | [vue/no-textarea-mustache](https://eslint.vuejs.org/rules/no-textarea-mustache.html)                                     | disallow mustaches in `<textarea>`                                      |
-| 18  | error | [vue/no-v-for-template-key](https://eslint.vuejs.org/rules/no-v-for-template-key.html)                                   | disallow `key` attribute on `<template v-for>`                          |
-| 19  | error | [vue/no-v-model-argument](https://eslint.vuejs.org/rules/no-v-model-argument.html)                                       | disallow adding an argument to `v-model` used in custom component       |
-| 20  | error | [vue/this-in-template](https://eslint.vuejs.org/rules/this-in-template.html)                                             | disallow usage of `this` in template                                    |
-| 21  | error | [vue/valid-v-bind](https://eslint.vuejs.org/rules/valid-v-bind.html)                                                     | enforce valid `v-bind` directives                                       |
-| 22  | error | [vue/valid-v-cloak](https://eslint.vuejs.org/rules/valid-v-cloak.html)                                                   | enforce valid `v-cloak` directives                                      |
-| 23  | error | [vue/valid-v-else](https://eslint.vuejs.org/rules/valid-v-else.html)                                                     | enforce valid `v-else` directives                                       |
-| 24  | error | [vue/valid-v-else-if](https://eslint.vuejs.org/rules/valid-v-else-if.html)                                               | enforce valid `v-else-if` directives                                    |
-| 25  | error | [vue/valid-v-for](https://eslint.vuejs.org/rules/valid-v-for.html)                                                       | enforce valid `v-for` directives                                        |
-| 26  | error | [vue/valid-v-html](https://eslint.vuejs.org/rules/valid-v-html.html)                                                     | enforce valid `v-html` directives                                       |
-| 27  | error | [vue/valid-v-if](https://eslint.vuejs.org/rules/valid-v-if.html)                                                         | enforce valid `v-if` directives                                         |
-| 28  | error | [vue/valid-v-model](https://eslint.vuejs.org/rules/valid-v-model.html)                                                   | enforce valid `v-model` directives                                      |
-| 29  | error | [vue/valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)                                                         | enforce valid `v-on` directives                                         |
-| 30  | error | [vue/valid-v-once](https://eslint.vuejs.org/rules/valid-v-once.html)                                                     | enforce valid `v-once` directives                                       |
-| 31  | error | [vue/valid-v-pre](https://eslint.vuejs.org/rules/valid-v-pre.html)                                                       | enforce valid `v-pre` directives                                        |
-| 32  | error | [vue/valid-v-show](https://eslint.vuejs.org/rules/valid-v-show.html)                                                     | enforce valid `v-show` directives                                       |
-| 33  | error | [vue/valid-v-slot](https://eslint.vuejs.org/rules/valid-v-slot.html)                                                     | enforce valid `v-slot` directives                                       |
-| 34  | error | [vue/valid-v-text](https://eslint.vuejs.org/rules/valid-v-text.html)                                                     | enforce valid `v-text` directives                                       |
+| 12  | error | [vue/no-parsing-error](https://eslint.vuejs.org/rules/no-parsing-error.html)                                             | disallow parsing errors in `<template>`                                 |
+| 13  | error | [vue/no-reserved-keys](https://eslint.vuejs.org/rules/no-reserved-keys.html)                                             | disallow overwriting reserved keys                                      |
+| 14  | error | [vue/no-side-effects-in-computed-properties](https://eslint.vuejs.org/rules/no-side-effects-in-computed-properties.html) | disallow side effects in computed properties                            |
+| 15  | error | [vue/no-template-key](https://eslint.vuejs.org/rules/no-template-key.html)                                               | disallow `key` attribute on `<template>`                                |
+| 16  | error | [vue/no-textarea-mustache](https://eslint.vuejs.org/rules/no-textarea-mustache.html)                                     | disallow mustaches in `<textarea>`                                      |
+| 17  | error | [vue/no-v-for-template-key](https://eslint.vuejs.org/rules/no-v-for-template-key.html)                                   | disallow `key` attribute on `<template v-for>`                          |
+| 18  | error | [vue/no-v-model-argument](https://eslint.vuejs.org/rules/no-v-model-argument.html)                                       | disallow adding an argument to `v-model` used in custom component       |
+| 19  | error | [vue/this-in-template](https://eslint.vuejs.org/rules/this-in-template.html)                                             | disallow usage of `this` in template                                    |
+| 20  | error | [vue/valid-v-bind](https://eslint.vuejs.org/rules/valid-v-bind.html)                                                     | enforce valid `v-bind` directives                                       |
+| 21  | error | [vue/valid-v-cloak](https://eslint.vuejs.org/rules/valid-v-cloak.html)                                                   | enforce valid `v-cloak` directives                                      |
+| 22  | error | [vue/valid-v-else](https://eslint.vuejs.org/rules/valid-v-else.html)                                                     | enforce valid `v-else` directives                                       |
+| 23  | error | [vue/valid-v-else-if](https://eslint.vuejs.org/rules/valid-v-else-if.html)                                               | enforce valid `v-else-if` directives                                    |
+| 24  | error | [vue/valid-v-for](https://eslint.vuejs.org/rules/valid-v-for.html)                                                       | enforce valid `v-for` directives                                        |
+| 25  | error | [vue/valid-v-html](https://eslint.vuejs.org/rules/valid-v-html.html)                                                     | enforce valid `v-html` directives                                       |
+| 26  | error | [vue/valid-v-if](https://eslint.vuejs.org/rules/valid-v-if.html)                                                         | enforce valid `v-if` directives                                         |
+| 27  | error | [vue/valid-v-model](https://eslint.vuejs.org/rules/valid-v-model.html)                                                   | enforce valid `v-model` directives                                      |
+| 28  | error | [vue/valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)                                                         | enforce valid `v-on` directives                                         |
+| 29  | error | [vue/valid-v-once](https://eslint.vuejs.org/rules/valid-v-once.html)                                                     | enforce valid `v-once` directives                                       |
+| 30  | error | [vue/valid-v-pre](https://eslint.vuejs.org/rules/valid-v-pre.html)                                                       | enforce valid `v-pre` directives                                        |
+| 31  | error | [vue/valid-v-show](https://eslint.vuejs.org/rules/valid-v-show.html)                                                     | enforce valid `v-show` directives                                       |
+| 32  | error | [vue/valid-v-slot](https://eslint.vuejs.org/rules/valid-v-slot.html)                                                     | enforce valid `v-slot` directives                                       |
+| 33  | error | [vue/valid-v-text](https://eslint.vuejs.org/rules/valid-v-text.html)                                                     | enforce valid `v-text` directives                                       |
 
 ### Warn
 
 |  #  | Type | Rule                                                                                               | Description                                                                  |
 | :-: | :--: | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
-|  1  | warn | [vue/no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html) | disallow the use of reserved names in component definitions                  |
-|  2  | warn | [vue/no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)                           | disallow unused variable definitions of v-for directives or scope attributes |
-|  3  | warn | [vue/require-render-return](https://eslint.vuejs.org/rules/require-render-return.html)             | enforce render function to always return value                               |
-|  4  | warn | [vue/require-valid-default-prop](https://eslint.vuejs.org/rules/require-valid-default-prop.html)   | enforce props default values to be valid                                     |
-|  5  | warn | [vue/return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html) | enforce that a return statement is present in computed property              |
-|  6  | warn | [vue/valid-template-root](https://eslint.vuejs.org/rules/valid-template-root.html)                 | enforce valid template root                                                  |
-|  7  | warn | [vue/valid-v-bind-sync](https://eslint.vuejs.org/rules/valid-v-bind-sync.html)                     | enforce valid `.sync` modifier on `v-bind` directives                        |
+|  1  | warn | [vue/no-mutating-props](https://eslint.vuejs.org/rules/no-mutating-props.html)                     | disallow mutation of component props                                         |
+|  2  | warn | [vue/no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html) | disallow the use of reserved names in component definitions                  |
+|  3  | warn | [vue/no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)                           | disallow unused variable definitions of v-for directives or scope attributes |
+|  4  | warn | [vue/require-render-return](https://eslint.vuejs.org/rules/require-render-return.html)             | enforce render function to always return value                               |
+|  5  | warn | [vue/require-valid-default-prop](https://eslint.vuejs.org/rules/require-valid-default-prop.html)   | enforce props default values to be valid                                     |
+|  6  | warn | [vue/return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html) | enforce that a return statement is present in computed property              |
+|  7  | warn | [vue/valid-template-root](https://eslint.vuejs.org/rules/valid-template-root.html)                 | enforce valid template root                                                  |
+|  8  | warn | [vue/valid-v-bind-sync](https://eslint.vuejs.org/rules/valid-v-bind-sync.html)                     | enforce valid `.sync` modifier on `v-bind` directives                        |
 
 ### Fixable
 
