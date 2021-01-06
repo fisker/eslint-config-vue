@@ -22,6 +22,8 @@ module.exports = {
     require.resolve('eslint-config-prettier/vue'),
   ],
   rules: {
+    'vue/eqeqeq': 'error',
+
     // disallow unused vars
     'vue/no-unused-vars': 'warn',
 
