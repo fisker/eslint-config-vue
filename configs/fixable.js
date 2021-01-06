@@ -43,6 +43,9 @@ const disabledRules = new Set([
   // HTML inside comment is not correctly indented
   'html-comment-content-newline',
   'html-comment-indent',
+
+  // This is annoying
+  'new-line-between-multi-line-property',
 ]);
 
 const rules = {};
