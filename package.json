@@ -61,7 +61,7 @@
   "devDependencies": {
     "@commitlint/cli": "12.0.1",
     "@fisker/commitlint-config": "1.3.3",
-    "@fisker/husky-config": "4.0.2",
+    "@fisker/husky-config": "4.0.3",
     "@fisker/lint-staged-config": "3.0.2",
     "@xwtec/eslint-config": "6.4.2",
     "@xwtec/prettier-config": "2.0.1",
