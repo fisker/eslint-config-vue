@@ -55,7 +55,7 @@
   "dependencies": {
     "@xwtec/eslint-config": "6.4.2",
     "eslint-config-prettier": "8.1.0",
-    "eslint-plugin-vue": "7.8.0",
+    "eslint-plugin-vue": "7.9.0",
     "vue-eslint-parser": "7.6.0"
   },
   "devDependencies": {
