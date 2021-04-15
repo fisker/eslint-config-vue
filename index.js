@@ -11,7 +11,7 @@ const base = require('@xwtec/eslint-config');
 
 module.exports = {
   root: true,
-  parser: 'vue-eslint-parser',
+  parser: require.resolve('vue-eslint-parser'),
   parserOptions: {
     ...base.parserOptions,
     parser: base.parser,
