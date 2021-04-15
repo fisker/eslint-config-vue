@@ -5,14 +5,16 @@
  * check this https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/eslint-config-prettier/index.js
  */
 
+'use strict';
+
 const base = require('@xwtec/eslint-config');
 
 module.exports = {
   root: true,
-  parser: require.resolve('vue-eslint-parser'),
+  parser: 'vue-eslint-parser',
   parserOptions: {
     ...base.parserOptions,
-    parser: 'babel-eslint',
+    parser: base.parser,
   },
   plugins: ['vue'],
   extends: [

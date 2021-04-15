@@ -1,5 +1,7 @@
 // Fixable rules
 
+'use strict';
+
 const {rules: allRules} = require('eslint-plugin-vue');
 
 const disabledRules = new Set([
