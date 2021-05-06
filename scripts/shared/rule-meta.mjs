@@ -1,4 +1,4 @@
-const mem = require('mem');
+import mem from 'mem';
 
 function getRuleDocs(ruleId, defs) {
   const def = defs.get(ruleId) || {};

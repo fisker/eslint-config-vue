@@ -1,4 +1,4 @@
-import parseRuleId from './parse-rule-id';
+import parseRuleId from './parse-rule-id.mjs';
 
 const compareString = (a, b) => a.trim().localeCompare(b.trim());
 

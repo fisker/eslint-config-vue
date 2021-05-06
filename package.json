@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "build": "npm-run-all build:*",
-    "build:rules": "node -r esm ./scripts/rules",
+    "build:rules": "node ./scripts/rules.mjs",
     "clean": "run-p clean:*",
     "clean:dist": "del-cli dist",
     "dist": "run-p dist:*",
@@ -67,7 +67,7 @@
     "ava": "3.15.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.25.0",
-    "esm": "3.2.25",
+    "esm-utils": "0.0.4",
     "husky": "6.0.0",
     "lint-staged": "10.5.4",
     "markdownlint-cli": "0.27.1",
@@ -75,7 +75,7 @@
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
     "sort-package-json": "1.50.0",
-    "write-prettier-file": "1.2.6"
+    "write-prettier-file": "2.0.0"
   },
   "peerDependencies": {
     "eslint": "*",

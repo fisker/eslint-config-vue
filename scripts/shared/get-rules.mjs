@@ -1,8 +1,7 @@
 import {CLIEngine} from 'eslint';
 import mem from 'mem';
-
-import ruleMeta from './rule-meta';
-import ruleValue from './rule-value';
+import ruleMeta from './rule-meta.mjs';
+import ruleValue from './rule-value.mjs';
 
 function getRules(config) {
   const engine = new CLIEngine({
