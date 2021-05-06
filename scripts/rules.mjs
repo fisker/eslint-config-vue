@@ -1,6 +1,6 @@
 import {join} from 'path';
 import {readFileSync} from 'fs';
-import createEsmUtils from 'esm-utils'
+import createEsmUtils from 'esm-utils';
 import printer from './shared/markdown-rules-printer.mjs';
 import writeFile from './shared/write-file.mjs';
 import getRules from './shared/get-rules.mjs';
@@ -8,7 +8,7 @@ import parseRuleId from './shared/parse-rule-id.mjs';
 import sortRuleId from './shared/sort-rule-id.mjs';
 import config from '../index.js';
 
-const {dirname} = createEsmUtils(import.meta)
+const {dirname} = createEsmUtils(import.meta);
 
 const rules = getRules(config);
 const data = Object.keys(rules)
@@ -17,6 +17,7 @@ const data = Object.keys(rules)
     ...parseRuleId(ruleId),
     ...rules[ruleId],
   }))
+  .filter(({prefix}) => prefix === 'vue')
   .filter(({value}) => value !== 'off');
 
 const RULE_START_MARK = '<!-- rules start -->';
