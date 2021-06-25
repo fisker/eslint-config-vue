@@ -62,21 +62,20 @@ module.exports = {
 | 15  | error | [vue/no-textarea-mustache](https://eslint.vuejs.org/rules/no-textarea-mustache.html)                                     | disallow mustaches in `<textarea>`                                      |
 | 16  | error | [vue/no-v-for-template-key](https://eslint.vuejs.org/rules/no-v-for-template-key.html)                                   | disallow `key` attribute on `<template v-for>`                          |
 | 17  | error | [vue/no-v-model-argument](https://eslint.vuejs.org/rules/no-v-model-argument.html)                                       | disallow adding an argument to `v-model` used in custom component       |
-| 18  | error | [vue/this-in-template](https://eslint.vuejs.org/rules/this-in-template.html)                                             | disallow usage of `this` in template                                    |
-| 19  | error | [vue/valid-v-bind](https://eslint.vuejs.org/rules/valid-v-bind.html)                                                     | enforce valid `v-bind` directives                                       |
-| 20  | error | [vue/valid-v-cloak](https://eslint.vuejs.org/rules/valid-v-cloak.html)                                                   | enforce valid `v-cloak` directives                                      |
-| 21  | error | [vue/valid-v-else](https://eslint.vuejs.org/rules/valid-v-else.html)                                                     | enforce valid `v-else` directives                                       |
-| 22  | error | [vue/valid-v-else-if](https://eslint.vuejs.org/rules/valid-v-else-if.html)                                               | enforce valid `v-else-if` directives                                    |
-| 23  | error | [vue/valid-v-for](https://eslint.vuejs.org/rules/valid-v-for.html)                                                       | enforce valid `v-for` directives                                        |
-| 24  | error | [vue/valid-v-html](https://eslint.vuejs.org/rules/valid-v-html.html)                                                     | enforce valid `v-html` directives                                       |
-| 25  | error | [vue/valid-v-if](https://eslint.vuejs.org/rules/valid-v-if.html)                                                         | enforce valid `v-if` directives                                         |
-| 26  | error | [vue/valid-v-model](https://eslint.vuejs.org/rules/valid-v-model.html)                                                   | enforce valid `v-model` directives                                      |
-| 27  | error | [vue/valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)                                                         | enforce valid `v-on` directives                                         |
-| 28  | error | [vue/valid-v-once](https://eslint.vuejs.org/rules/valid-v-once.html)                                                     | enforce valid `v-once` directives                                       |
-| 29  | error | [vue/valid-v-pre](https://eslint.vuejs.org/rules/valid-v-pre.html)                                                       | enforce valid `v-pre` directives                                        |
-| 30  | error | [vue/valid-v-show](https://eslint.vuejs.org/rules/valid-v-show.html)                                                     | enforce valid `v-show` directives                                       |
-| 31  | error | [vue/valid-v-slot](https://eslint.vuejs.org/rules/valid-v-slot.html)                                                     | enforce valid `v-slot` directives                                       |
-| 32  | error | [vue/valid-v-text](https://eslint.vuejs.org/rules/valid-v-text.html)                                                     | enforce valid `v-text` directives                                       |
+| 18  | error | [vue/valid-v-bind](https://eslint.vuejs.org/rules/valid-v-bind.html)                                                     | enforce valid `v-bind` directives                                       |
+| 19  | error | [vue/valid-v-cloak](https://eslint.vuejs.org/rules/valid-v-cloak.html)                                                   | enforce valid `v-cloak` directives                                      |
+| 20  | error | [vue/valid-v-else](https://eslint.vuejs.org/rules/valid-v-else.html)                                                     | enforce valid `v-else` directives                                       |
+| 21  | error | [vue/valid-v-else-if](https://eslint.vuejs.org/rules/valid-v-else-if.html)                                               | enforce valid `v-else-if` directives                                    |
+| 22  | error | [vue/valid-v-for](https://eslint.vuejs.org/rules/valid-v-for.html)                                                       | enforce valid `v-for` directives                                        |
+| 23  | error | [vue/valid-v-html](https://eslint.vuejs.org/rules/valid-v-html.html)                                                     | enforce valid `v-html` directives                                       |
+| 24  | error | [vue/valid-v-if](https://eslint.vuejs.org/rules/valid-v-if.html)                                                         | enforce valid `v-if` directives                                         |
+| 25  | error | [vue/valid-v-model](https://eslint.vuejs.org/rules/valid-v-model.html)                                                   | enforce valid `v-model` directives                                      |
+| 26  | error | [vue/valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)                                                         | enforce valid `v-on` directives                                         |
+| 27  | error | [vue/valid-v-once](https://eslint.vuejs.org/rules/valid-v-once.html)                                                     | enforce valid `v-once` directives                                       |
+| 28  | error | [vue/valid-v-pre](https://eslint.vuejs.org/rules/valid-v-pre.html)                                                       | enforce valid `v-pre` directives                                        |
+| 29  | error | [vue/valid-v-show](https://eslint.vuejs.org/rules/valid-v-show.html)                                                     | enforce valid `v-show` directives                                       |
+| 30  | error | [vue/valid-v-slot](https://eslint.vuejs.org/rules/valid-v-slot.html)                                                     | enforce valid `v-slot` directives                                       |
+| 31  | error | [vue/valid-v-text](https://eslint.vuejs.org/rules/valid-v-text.html)                                                     | enforce valid `v-text` directives                                       |
 
 ### Warn
 
@@ -93,36 +92,39 @@ module.exports = {
 
 ### Fixable
 
-|  #  | Type  | Rule                                                                                                                   | Description                                                              |
-| :-: | :---: | :--------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-|  1  | warn  | [vue/attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)                                 | enforce attribute naming style on custom components in template          |
-|  2  | warn  | [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)                                           | enforce order of attributes                                              |
-|  3  | warn  | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)         | enforce specific casing for the component naming style in template       |
-|  4  | warn  | [vue/dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)                                                   | enforce dot notation whenever possible                                   |
-|  5  | error | [vue/eqeqeq](https://eslint.vuejs.org/rules/eqeqeq.html)                                                               | require the use of `===` and `!==`                                       |
-|  6  | warn  | [vue/html-comment-content-spacing](https://eslint.vuejs.org/rules/html-comment-content-spacing.html)                   | enforce unified spacing in HTML comments                                 |
-|  7  | warn  | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                                   | enforce specific casing for the name property in Vue components          |
-|  8  | warn  | [vue/next-tick-style](https://eslint.vuejs.org/rules/next-tick-style.html)                                             | enforce Promise or callback style in `nextTick`                          |
-|  9  | warn  | [vue/no-deprecated-data-object-declaration](https://eslint.vuejs.org/rules/no-deprecated-data-object-declaration.html) | disallow using deprecated object declaration on data (in Vue.js 3.0.0+)  |
-| 10  | warn  | [vue/no-deprecated-dollar-scopedslots-api](https://eslint.vuejs.org/rules/no-deprecated-dollar-scopedslots-api.html)   | disallow using deprecated `$scopedSlots` (in Vue.js 3.0.0+)              |
-| 11  | warn  | [vue/no-deprecated-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-scope-attribute.html)                 | disallow deprecated `scope` attribute (in Vue.js 2.5.0+)                 |
-| 12  | warn  | [vue/no-deprecated-slot-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-scope-attribute.html)       | disallow deprecated `slot-scope` attribute (in Vue.js 2.6.0+)            |
-| 13  | warn  | [vue/no-deprecated-v-on-number-modifiers](https://eslint.vuejs.org/rules/no-deprecated-v-on-number-modifiers.html)     | disallow using deprecated number (keycode) modifiers (in Vue.js 3.0.0+)  |
-| 14  | warn  | [vue/no-ref-as-operand](https://eslint.vuejs.org/rules/no-ref-as-operand.html)                                         | disallow use of value wrapped by `ref()` (Composition API) as an operand |
-| 15  | warn  | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                           | enforce component's data property to be a function                       |
-| 16  | warn  | [vue/no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)                             | disallow unsupported Vue.js syntax on the specified version              |
-| 17  | warn  | [vue/no-useless-mustaches](https://eslint.vuejs.org/rules/no-useless-mustaches.html)                                   | disallow unnecessary mustache interpolations                             |
-| 18  | warn  | [vue/no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html)                                         | disallow unnecessary `v-bind` directives                                 |
-| 19  | warn  | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                                     | enforce order of properties in components                                |
-| 20  | warn  | [vue/padding-line-between-blocks](https://eslint.vuejs.org/rules/padding-line-between-blocks.html)                     | require or disallow padding lines between blocks                         |
-| 21  | warn  | [vue/prefer-template](https://eslint.vuejs.org/rules/prefer-template.html)                                             | require template literals instead of string concatenation                |
-| 22  | warn  | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)                 | require prop type to be a constructor                                    |
-| 23  | warn  | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                                   | enforce `v-bind` directive style                                         |
-| 24  | warn  | [vue/v-for-delimiter-style](https://eslint.vuejs.org/rules/v-for-delimiter-style.html)                                 | enforce `v-for` directive's delimiter style                              |
-| 25  | warn  | [vue/v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html)                               | enforce v-on event naming style on custom components in template         |
-| 26  | warn  | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                                       | enforce `v-on` directive style                                           |
-| 27  | warn  | [vue/v-slot-style](https://eslint.vuejs.org/rules/v-slot-style.html)                                                   | enforce `v-slot` directive style                                         |
-| 28  | warn  | [vue/valid-next-tick](https://eslint.vuejs.org/rules/valid-next-tick.html)                                             | enforce valid `nextTick` function calls                                  |
+|  #  | Type  | Rule                                                                                                                   | Description                                                                                  |
+| :-: | :---: | :--------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+|  1  | warn  | [vue/attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)                                 | enforce attribute naming style on custom components in template                              |
+|  2  | warn  | [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)                                           | enforce order of attributes                                                                  |
+|  3  | warn  | [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)         | enforce specific casing for the component naming style in template                           |
+|  4  | warn  | [vue/dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)                                                   | enforce dot notation whenever possible                                                       |
+|  5  | error | [vue/eqeqeq](https://eslint.vuejs.org/rules/eqeqeq.html)                                                               | require the use of `===` and `!==`                                                           |
+|  6  | warn  | [vue/html-comment-content-spacing](https://eslint.vuejs.org/rules/html-comment-content-spacing.html)                   | enforce unified spacing in HTML comments                                                     |
+|  7  | warn  | [vue/name-property-casing](https://eslint.vuejs.org/rules/name-property-casing.html)                                   | enforce specific casing for the name property in Vue components                              |
+|  8  | warn  | [vue/next-tick-style](https://eslint.vuejs.org/rules/next-tick-style.html)                                             | enforce Promise or callback style in `nextTick`                                              |
+|  9  | warn  | [vue/no-deprecated-data-object-declaration](https://eslint.vuejs.org/rules/no-deprecated-data-object-declaration.html) | disallow using deprecated object declaration on data (in Vue.js 3.0.0+)                      |
+| 10  | warn  | [vue/no-deprecated-destroyed-lifecycle](https://eslint.vuejs.org/rules/no-deprecated-destroyed-lifecycle.html)         | disallow using deprecated `destroyed` and `beforeDestroy` lifecycle hooks (in Vue.js 3.0.0+) |
+| 11  | warn  | [vue/no-deprecated-dollar-scopedslots-api](https://eslint.vuejs.org/rules/no-deprecated-dollar-scopedslots-api.html)   | disallow using deprecated `$scopedSlots` (in Vue.js 3.0.0+)                                  |
+| 12  | warn  | [vue/no-deprecated-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-scope-attribute.html)                 | disallow deprecated `scope` attribute (in Vue.js 2.5.0+)                                     |
+| 13  | warn  | [vue/no-deprecated-slot-scope-attribute](https://eslint.vuejs.org/rules/no-deprecated-slot-scope-attribute.html)       | disallow deprecated `slot-scope` attribute (in Vue.js 2.6.0+)                                |
+| 14  | warn  | [vue/no-deprecated-v-is](https://eslint.vuejs.org/rules/no-deprecated-v-is.html)                                       | disallow deprecated `v-is` directive (in Vue.js 3.1.0+)                                      |
+| 15  | warn  | [vue/no-deprecated-v-on-number-modifiers](https://eslint.vuejs.org/rules/no-deprecated-v-on-number-modifiers.html)     | disallow using deprecated number (keycode) modifiers (in Vue.js 3.0.0+)                      |
+| 16  | warn  | [vue/no-ref-as-operand](https://eslint.vuejs.org/rules/no-ref-as-operand.html)                                         | disallow use of value wrapped by `ref()` (Composition API) as an operand                     |
+| 17  | warn  | [vue/no-shared-component-data](https://eslint.vuejs.org/rules/no-shared-component-data.html)                           | enforce component's data property to be a function                                           |
+| 18  | warn  | [vue/no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)                             | disallow unsupported Vue.js syntax on the specified version                                  |
+| 19  | warn  | [vue/no-useless-mustaches](https://eslint.vuejs.org/rules/no-useless-mustaches.html)                                   | disallow unnecessary mustache interpolations                                                 |
+| 20  | warn  | [vue/no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html)                                         | disallow unnecessary `v-bind` directives                                                     |
+| 21  | warn  | [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)                                     | enforce order of properties in components                                                    |
+| 22  | warn  | [vue/padding-line-between-blocks](https://eslint.vuejs.org/rules/padding-line-between-blocks.html)                     | require or disallow padding lines between blocks                                             |
+| 23  | warn  | [vue/prefer-template](https://eslint.vuejs.org/rules/prefer-template.html)                                             | require template literals instead of string concatenation                                    |
+| 24  | warn  | [vue/require-prop-type-constructor](https://eslint.vuejs.org/rules/require-prop-type-constructor.html)                 | require prop type to be a constructor                                                        |
+| 25  | error | [vue/this-in-template](https://eslint.vuejs.org/rules/this-in-template.html)                                           | disallow usage of `this` in template                                                         |
+| 26  | warn  | [vue/v-bind-style](https://eslint.vuejs.org/rules/v-bind-style.html)                                                   | enforce `v-bind` directive style                                                             |
+| 27  | warn  | [vue/v-for-delimiter-style](https://eslint.vuejs.org/rules/v-for-delimiter-style.html)                                 | enforce `v-for` directive's delimiter style                                                  |
+| 28  | warn  | [vue/v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html)                               | enforce v-on event naming style on custom components in template                             |
+| 29  | warn  | [vue/v-on-style](https://eslint.vuejs.org/rules/v-on-style.html)                                                       | enforce `v-on` directive style                                                               |
+| 30  | warn  | [vue/v-slot-style](https://eslint.vuejs.org/rules/v-slot-style.html)                                                   | enforce `v-slot` directive style                                                             |
+| 31  | warn  | [vue/valid-next-tick](https://eslint.vuejs.org/rules/valid-next-tick.html)                                             | enforce valid `nextTick` function calls                                                      |
 
 <!-- rules end -->
 
