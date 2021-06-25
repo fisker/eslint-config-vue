@@ -48,6 +48,8 @@ const disabledRules = new Set([
 
   // This is annoying
   'new-line-between-multi-line-property',
+
+  'no-deprecated-destroyed-lifecycle',
 ]);
 
 const rules = {};
