@@ -1,7 +1,7 @@
-import test from 'ava';
 import fs from 'fs';
 import path from 'path';
 import url from 'url';
+import test from 'ava';
 import ESLint from 'eslint';
 
 const dirname = path.dirname(url.fileURLToPath(import.meta.url));

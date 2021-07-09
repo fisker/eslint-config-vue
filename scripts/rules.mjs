@@ -1,12 +1,12 @@
 import {join} from 'path';
 import {readFileSync} from 'fs';
 import createEsmUtils from 'esm-utils';
+import config from '../index.js';
 import printer from './shared/markdown-rules-printer.mjs';
 import writeFile from './shared/write-file.mjs';
 import getRules from './shared/get-rules.mjs';
 import parseRuleId from './shared/parse-rule-id.mjs';
 import sortRuleId from './shared/sort-rule-id.mjs';
-import config from '../index.js';
 
 const {dirname} = createEsmUtils(import.meta);
 
